@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'Hamster';
+    src: url('/desafios/d012/fontes/Hamster.otf') format('opentype');
+}
+
+:root{
+    --color01: #F2F2F2;
+    --color02: #4e0d0d;
+    --color03: #351d15;
+    --color04: #D99873;
+    --color05: #31401A;
+    --color06: #80380ecb;
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fontehamster: 'Hamster', Arial, Helvetica, sans-serif;
+    --fontesriracha: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+html, body{
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: #000000;
+    color: var(--color04);
+    text-align: center;
+    padding: 60px;
+}
+
+header > h1{
+    font-family: var(--fontehamster);
+    font-size: 10vw;
+}
+
+header > p > a{
+    color: var(--color03);
+    text-decoration: none;
+}
+
+header > p > a:hover{
+    background-color: var(--color02);
+    color: var(--color04);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+header > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+section{
+    font-family: var(--fontesriracha);
+    font-weight: bold;
+    font-size: 4.4vw;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 40px;
+    background-color: var(--color01);
+}
+
+section > p{
+    padding-bottom: 50px;
+}
+
+footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+strong > a{
+    color: var(--color04);
+    text-decoration: none;
+}
+
+strong > a:hover{
+    text-transform: uppercase;
+}
+
+
+
+
+
+#paragrafo2{
+    background-image: url('../imagem/background001.jpg');
+    background-color: rgb(39, 39, 39);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 100px 80px 40px;
+    box-shadow: inset 10px 10px 10px 0px rgba(0, 0, 0, 0.712);
+    text-shadow: 2px 2px 0px #421d07;
+}
+
+#paragrafo5{
+    background-color: rgb(39, 39, 39);
+    background-image: url('../imagem/background002.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 100px 80px 40px;
+    box-shadow: inset 10px 10px 10px 0px rgba(0, 0, 0, 0.712);
+    text-shadow: 2px 2px 0px #421d07;
+}
+
+#paragrafo2 > p{
+    background-color: #00000056;
+    color: var(--color06);
+    min-width: 335px;
+    width: 80%;
+}
+
+#paragrafo5 > p{
+    background-color: #00000056;
+    color: var(--color06);
+    min-width: 335px;
+    width: 80%;
+}
